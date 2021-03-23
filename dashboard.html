@@ -1,0 +1,5022 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HES</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	
+	
+
+    
+    <style>
+        .hideArrow::after {
+            content: none !important;
+        }
+        .hidebullet li{
+            list-style-type:none;
+        }
+        .tab {
+            float: left;
+            width: 20%;
+            height: 700px;
+        }
+
+#piecharturban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#Smartpiecharturban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#piechartrural {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#piecharteducationurban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#Smartpiecharteducationurban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#piecharteducationrural {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#occupationstatusurban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#Smartoccupationstatusurban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#occupationstatusrural {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#piechartopdurban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#piechartopdrural {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#piechartipdurban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#piechartipdrural {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#chartContainerurban {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#chartContainerrural {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+#percentagecategorywise {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#smartphone {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklyfood {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklyhospital {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklytransport {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklyrental {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklyeducation {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklycloths {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklyhome {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklyentertainment {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+#weeklyothers {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+            /* Style the buttons inside the tab */
+            .tab button {
+                display: block;
+                background-color: inherit;
+                color: black;
+                padding: 22px 16px;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+                /* Change background color of buttons on hover */
+                .tab button:hover {
+                    background-color: #ddd;
+                }
+
+                /* Create an active/current "tab button" class */
+                .tab button.active {
+                    background-color: #ccc;
+                }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            width: 80%;
+            border-left: none;
+            height: 700px;
+        }
+
+
+        .chart--container {
+            min-height: 150px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .zc-ref {
+            display: none;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left !important;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff;
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons */
+        .popupbuttons {
+            background-color: #0181f5;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        /* Center the image and position the close button */
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+
+        /* Add Zoom Animation */
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body style="overflow-x: hidden !important;">
+    <header>
+        <div class="header-area ">
+            
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="img/new_logov1.png" alt="" style="width: 226px; height: 70px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation" style="padding-left: 0px;">
+                                            <li><a href="index.html">Home</a></li>
+                                            
+                                            <li>
+                                                <a  href="study.html">Design</a>
+                                                
+                                            </li>
+                                            
+                                            <li>
+                                                <a class="active" href="dashboard.html">Data</a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="document.html">Resources</a>
+                                            </li>
+											<li>
+                                                <a href="gallery.html">Gallery</a>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="service_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-50">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2></h2>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home" style="width: 350px;text-align: center;color: black;font-weight: bold;">Survey</a></li>
+                    <li><a data-toggle="tab" href="#menu1" style="width: 350px;text-align: center;color: black;font-weight: bold;">Smartphone</a></li>
+                    <li><a data-toggle="tab" href="#menu2" style="width: 350px;text-align: center;color: black;font-weight: bold;">Analysis</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#Module" role="tab" data-toggle="tab" style="width: 200px;text-align: center;color: black;">Overview</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle hideArrow" data-toggle="dropdown" href="#" style="width: 200px;text-align: center;color: black;">Demography</a>
+                                <ul class="dropdown-menu hidebullet">
+                                    <li><a href="#Age" role="tab" data-toggle="tab">Age distribution</a></li>
+                                    <li><a href="#Marital" role="tab" data-toggle="tab">Marital status</a></li>
+                                    <li><a href="#Education" role="tab" data-toggle="tab">Education status</a></li>
+                                    <li><a href="#Percentage" role="tab" data-toggle="tab">Percentage of assets</a></li>
+                                    <li><a href="#Occupation" role="tab" data-toggle="tab">Occupation</a></li>
+                                    <li><a href="#Monthly" role="tab" data-toggle="tab">Monthly income</a></li>
+                                    <li><a href="#chronic" role="tab" data-toggle="tab">Chronic illness</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Acute" role="tab" data-toggle="tab" style="width: 200px;text-align: center;color: black;">Acute illness</a></li>
+                            <li><a href="#Hospitalisation" role="tab" data-toggle="tab" style="width: 200px;text-align: center;color: black;">Hospitalisation</a></li>
+                            <li><a href="#Totalexpense" role="tab" data-toggle="tab" style="width: 200px;text-align: center;color: black;">Total expense</a></li>
+							</ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Module">
+                                <h3></h3>
+								
+
+                                <div class="col-md-offset-2 col-md-9" id="chart_phase1">
+
+                                </div>
+
+                                <div class="col-md-offset-2 col-md-9">
+                                    <h3 style="text-align:center;color:black">Area distribution</h3>
+                                </div>
+                                <div class="container">
+
+                                    <table>
+                                        <tr>
+
+                                            <th>Clusters</th>
+                                            <th>Area</th>
+                                            <th>Area name</th>
+                                            <th>No. of households</th>
+                                            <th>Followup-1</th>
+                                            <th>Followup-2</th>
+                                            <th>Followup-3</th>
+                                            <th>Followup-4</th>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C01</td>
+                                            <td>Urban</td>
+                                            <td>Saidapet</td>
+                                            <td>31</td>
+                                            <td>27</td>
+                                            <td>27</td>
+                                            <td>27</td>
+                                            <td>27</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C02</td>
+                                            <td>Urban</td>
+                                            <td>U.M. Koil (Back side)</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C03</td>
+                                            <td>Urban</td>
+                                            <td>Ariyur colony</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C04</td>
+                                            <td>Rural</td>
+                                            <td>Sathuperi 1</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C05</td>
+                                            <td>Rural</td>
+                                            <td>Sathuperi 2</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C06</td>
+                                            <td>Rural</td>
+                                            <td>Sirukanchi</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C07</td>
+                                            <td>Rural</td>
+                                            <td>Kuppam</td>
+                                            <td>31</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>28</td>
+                                            <td>28</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C08</td>
+                                            <td>Rural</td>
+                                            <td>Chinna sekkanur</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C09</td>
+                                            <td>Rural</td>
+                                            <td>Pappathiamman/Pazhavery</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C10</td>
+                                            <td>Urban</td>
+                                            <td>CAP</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>28</td>
+                                            <td>28</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C11</td>
+                                            <td>Urban</td>
+                                            <td>RNP</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C12</td>
+                                            <td>Urban</td>
+                                            <td>RNP</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C13</td>
+                                            <td>Urban</td>
+                                            <td>Kaspa</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C14</td>
+                                            <td>Rural</td>
+                                            <td>Sembedu-1</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C15</td>
+                                            <td>Rural</td>
+                                            <td>Abdullapuram-1</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C16</td>
+                                            <td>Rural</td>
+                                            <td>Abdullapuram-2</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>27</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C17</td>
+                                            <td>Rural</td>
+                                            <td>Melmonovar</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C18</td>
+                                            <td>Rural</td>
+                                            <td>Keezmonovar</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C19</td>
+                                            <td>Rural</td>
+                                            <td>Periaya Sekkanur</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>27</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C20</td>
+                                            <td>Rural</td>
+                                            <td>Karugambathur-1</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C21</td>
+                                            <td>Rural</td>
+                                            <td>Karugambathur-2</td>
+                                            <td>30</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>29</td>
+                                            <td>28</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C22</td>
+                                            <td>Urban</td>
+                                            <td>Sangaranpalayam</td>
+                                            <td>30</td>
+                                            <td>26</td>
+                                            <td>26</td>
+                                            <td>25</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C23</td>
+                                            <td>Urban</td>
+                                            <td>Kosapet</td>
+                                            <td>30</td>
+                                            <td>25</td>
+                                            <td>23</td>
+                                            <td>21</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C24</td>
+                                            <td>Urban</td>
+                                            <td>Kalaspalayam</td>
+                                            <td>30</td>
+                                            <td>24</td>
+                                            <td>22</td>
+                                            <td>18</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C25</td>
+                                            <td>Rural</td>
+                                            <td>Usoor</td>
+                                            <td>30</td>
+                                            <td>26</td>
+                                            <td>21</td>
+                                            <td>21</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C26</td>
+                                            <td>Rural</td>
+                                            <td>Usoor2</td>
+                                            <td>30</td>
+                                            <td>28</td>
+                                            <td>26</td>
+                                            <td>26</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C27</td>
+                                            <td>Rural</td>
+                                            <td>Athiyur/Sivanathapuram</td>
+                                            <td>30</td>
+                                            <td>27</td>
+                                            <td>26</td>
+                                            <td>25</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C28</td>
+                                            <td>Rural</td>
+                                            <td>Poigai</td>
+                                            <td>30</td>
+                                            <td>25</td>
+                                            <td>22</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C29</td>
+                                            <td>Rural</td>
+                                            <td>Elavampadi</td>
+                                            <td>30</td>
+                                            <td>25</td>
+                                            <td>24</td>
+                                            <td>23</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>C30</td>
+                                            <td>Rural</td>
+                                            <td>Thellur</td>
+                                            <td>30</td>
+                                            <td>30</td>
+                                            <td>27</td>
+                                            <td>26</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">Total</td>
+                                            <td colspan="1">902</td>
+                                            <td colspan="1">855</td>
+                                            <td colspan="1">832</td>
+                                            <td colspan="1">819</td>
+                                            <td colspan="1"><b>773</b></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="Age">
+                                <div class="container">
+                                    <h3></h3>
+                                    <div class="col-xl-6 col-lg-6" id="myCharturban">
+
+
+
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6" id="myChartrural">
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="tab-pane" id="Marital">
+                                <h3></h3>
+                                
+                                <div class="container">
+                                    <h3 style="text-align:center;"></h3>
+                                    <div class="col-xl-6 col-lg-6" id="piecharturban" style="height: 50%; width: 300%;">
+
+
+
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6" id="piechartrural" style="height: 50%; width: 300%;">
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="Education">
+                                <h3></h3>
+                                <div class="col-xl-6 col-lg-6" id="piecharteducationurban" style="height: 50%; width: 300%;">
+
+
+
+                                </div>
+                                <div class="col-xl-6 col-lg-6" id="piecharteducationrural" style="height: 50%; width: 300%;">
+
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="Percentage">
+                                <h3></h3>
+                                <div class="container">
+                                    <div class="">
+                                        <h3 style="text-align:center;"></h3>
+                                        <div id="chart_divurban">
+
+                                        </div>
+                                        <div id="chart_divrural">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="Occupation">
+                                <h3></h3>
+                                <div class="col-xl-6 col-lg-6" id="occupationstatusurban" style="height: 50%; width: 300%;">
+
+
+
+                                </div>
+                                <div class="col-xl-6 col-lg-6" id="occupationstatusrural" style="height: 50%; width: 300%;">
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Monthly">
+                                <h3></h3>
+                                <div class="col-xl-6 col-lg-6" id="monthly_expenseurban" style="height: 50%; width: 300%;">
+
+
+
+                                </div>
+                                <div class="col-xl-6 col-lg-6" id="monthly_expenserural" style="height: 50%; width: 300%;">
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="chronic">
+                                <h3></h3>
+                                <div class="container">
+                                    <div id="chart_illnessurban">
+
+                                    </div>
+                                    <div id="chart_illnessrural">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Acute">
+                                <div class="container">
+                                    <div class="col-xl-12 col-lg-6">
+                                        
+
+                                        <img src="img/Acute illness.png" style="height:495px;width: 180%;" />
+                                    </div>
+
+                                </div>
+                                
+                                    <div class="col-xl-3 col-lg-12">
+                                        <div id="piechartopdurban" style="height: 50%; width: 300%;">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-5 col-lg-12">
+                                        <div id="piechartopdrural" style="height: 50%; width: 300%;">
+
+                                            </div>
+                                    </div>
+                                
+
+
+
+                            </div>
+                            <div class="tab-pane" id="Hospitalisation">
+                                <div class="container">
+
+                                    <div class="col-xl-12 col-lg-6">
+                                        <h3 style="text-align:center;"></h3>
+                                        <img src="img/Hospitalisation.png" style="height:375px;width: 170%;" />
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-3 col-lg-12">
+                                    <h3 style="text-align:center;"></h3>
+                                    <div id="piechartipdurban" style="height: 50%; width: 300%;">
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-lg-12">
+                                    <h3 style="text-align:center;"></h3>
+                                    <div id="piechartipdrural" style="height: 50%; width: 300%;">
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="tab-pane" id="Totalexpense">
+                                <div class="container">
+                                    <div class="col-xl-6 col-lg-6" id="chartContainerurban" style="height: 50%; width: 300%;">
+
+
+
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6" id="chartContainerrural" style="height: 50%; width: 300%;">
+
+
+                                    </div>
+                                </div>
+								<div class="container">
+
+                                    <div class="col-md-offset-1 col-md-9">
+                                        <h3 style="text-align:center;"></h3>
+                                        <img src="img/Avg_mont.png" style="height:375px;width: 100%;" />
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                    </div>
+					</div>
+					
+                    <div id="menu1" class="tab-pane fade">
+                        <h3></h3>
+                        
+                           <ul class="nav nav-tabs" role="tablist">
+						   <!--<li class="active"><a href="#Smartphone" role="tab" data-toggle="tab" style="width: 350px;text-align: center;color: black;">Demographics</a></li>-->
+                            <li class="dropdown">
+                                <a class="dropdown-toggle hideArrow" data-toggle="dropdown" href="#" style="width: 450px;text-align: center;color: black;">Demography</a>
+                                <ul class="dropdown-menu hidebullet">
+                                    <li><a href="#SmartAge" role="tab" data-toggle="tab">Age distribution</a></li>
+                                    <li><a href="#SmartMarital" role="tab" data-toggle="tab">Marital status</a></li>
+                                    <li><a href="#SmartEducation" role="tab" data-toggle="tab">Education status</a></li>
+                                    <li><a href="#SmartPercentage" role="tab" data-toggle="tab">Percentage of assets</a></li>
+                                    <li><a href="#SmartOccupation" role="tab" data-toggle="tab">Occupation</a></li>
+                                    <li><a href="#SmartMonthly" role="tab" data-toggle="tab">Monthly income</a></li>
+                                    <li><a href="#Smartchronic" role="tab" data-toggle="tab">Chronic illness</a></li>
+                                </ul>
+                            </li>
+							<li><a href="#Hospital" role="tab" data-toggle="tab" style="width: 450px;text-align: center;color: black;">Missing patterns</a></li>
+							<!--<li><a href="#PercentageCategory" role="tab" data-toggle="tab" style="width: 350px;text-align: center;color: black;">Time-series</a></li>
+							<!--<li><a href="#WeeklyCategory" role="tab" data-toggle="tab" style="width: 200px;text-align: center;color: black;">Average expenditure categorywise</a></li>-->
+
+
+
+                        </ul>
+
+
+                        <!-- Tab panes -->
+						<div class="tab-content">
+
+							<div class="tab-pane" id="SmartAge">
+                                <div class="container">
+                                    <h3></h3>
+                                    <div  id="SmartmyCharturban">
+
+
+
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+                            <div class="tab-pane" id="SmartMarital">
+                                <h3></h3>
+                                
+                                <div class="container">
+                                    <h3 style="text-align:center;"></h3>
+                                    <div class="col-xl-12 col-lg-6" id="Smartpiecharturban" style="height: 50%; width: 300%;">
+
+
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="SmartEducation">
+                                <h3></h3>
+                                <div class="col-xl-12 col-lg-6" id="Smartpiecharteducationurban" style="height: 50%; width: 300%;">
+
+
+
+                                </div>
+                                
+                            </div>
+
+                            <div class="tab-pane" id="SmartPercentage">
+                                <h3></h3>
+                                <div class="container">
+                                    <div class="">
+                                        <h3 style="text-align:center;"></h3>
+                                        <div id="Smartchart_divurban">
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="SmartOccupation">
+                                <h3></h3>
+                                <div class="col-xl-12 col-lg-6" id="Smartoccupationstatusurban" style="height: 50%; width: 300%;">
+
+
+
+                                </div>
+                                
+                            </div>
+                            <div class="tab-pane" id="SmartMonthly">
+                                <h3></h3>
+                                <div class="col-xl-12 col-lg-6" id="Smartmonthly_expenseurban" style="height: 50%; width: 300%;">
+
+
+
+                                </div>
+                                
+                            </div>
+                            <div class="tab-pane" id="Smartchronic">
+                                <h3></h3>
+                                <div class="container">
+                                    <div id="Smartchart_illnessurban">
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="Hospital">
+
+                                <div class="container">
+
+                                    <div class="col-md-offset-1 col-md-9">
+                                        <h3 style="text-align:center;"></h3>
+                                        <img src="img/phase_month_ph1.png" style="height:375px;width: 120%;" />
+                                    </div>
+								
+									 <div class="col-md-offset-1 col-md-9">
+                                        <h3 style="text-align:center;"></h3>
+                                        <img src="img/heatmap_month_ph2.png" style="height:375px;width: 120%;" />
+                                    </div>
+								
+									 <div class="col-md-offset-1 col-md-9">
+                                        <h3 style="text-align:center;"></h3>
+                                        <img src="img/heatmap_month_ph3.png" style="height:375px;width: 120%;" />
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--<div class="tab-pane" id="PercentageCategory">
+
+                                <div class="col-md-12">
+                                    <div class="col-md-offset-1 col-md-9">
+                                        <h3 style="text-align:center;"></h3>
+                                        <img src="img/Lockdown1.png" style="height:375px;width: 120%;" />
+                                    </div>
+                                </div>
+
+
+                            </div>-->
+                            
+                        </div>
+						</div>
+						<div id="menu2" class="tab-pane fade">
+						<h3 style="text-align:center;">Data analysis</h3>
+							<div class="tab-content">
+
+							<div class="row">
+                <div class="col-xl-12">
+                    <div class="more_close_btn text-center">
+                        <a href="https://ogcmc.shinyapps.io/basicanalysis/" target="_blank" class="boxed-btn3-line">Click here</a>
+                    </div>
+                </div>
+            </div>
+                            </div>
+							</div>
+					</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://www.cmch-vellore.edu/" target="_blank">CMC</a>-Vellore
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+   
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+   
+    
+
+    
+    
+    <script type="text/javascript">
+        zingchart.loadModules('scalableyaxis', function (e) {
+            var myConfig = {
+                title: {
+                    text: 'Food'
+                },
+                "type": "line", "series": [{ "showInLegend": true, "legendText": "Rural", "values": [3695.14, 5605.38, 5236.52, 5174.95, 6332.65, 8974.01, 6528.90, 6196.12, 5784.45, 5512.5, 5200.65, 5406.35], "guideLabel": { text: 'Rural: %v' }}, { "showInLegend": true,"legendText": "Urban","values": [3733.5, 5310.8, 5540.65, 5883.35, 5831.69, 5550.03, 5085.34, 5631.53,4565,5022.85,4678.42,4858.23],"guideLabel": { text: 'Urban: %v' } }], 
+                 
+                  legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                 
+                  crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+            var myConfig2 = {
+                title: {
+                    text: 'Hospital'
+                },
+                "type": "line", "series": [{ "showInLegend": true,"legendText": "Rural","values": [1240.85, 1456.88, 1864.88, 1490.85, 2588.30, 4735.32, 2898.67, 2430.10, 473.65, 740.45, 515.67, 611.37],"guideLabel": { text: 'Rural: %v' } }, {"showInLegend": true,"legendText": "Urban", "values": [1192.4, 1774.3, 1240.15, 1379.05, 1436.30, 1709.07, 1072.92, 1074.23,1506.33,1223.57,631.19,2035.52],"guideLabel": { text: 'Urban: %v' } }],
+                 
+                 legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                 crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+            var myConfig3 = {
+                title: {
+                    text: 'Transport'
+                },
+                "type": "line", "series": [{ "showInLegend": true,"legendText": "Rural","values": [2324.88, 4388.95, 3179.69, 3498.57, 4034.89, 3697.12, 3838.49, 3633.65, 962.62, 1187.12, 1100.82, 1217.87],"guideLabel": { text: 'Rural: %v' } }, { "showInLegend": true,"legendText": "Urban","values": [1890.55, 2213.2, 2506.6, 3175.7, 2172.65, 1895.19, 1860.03, 1914.03,409.28,826.42,1062.85,863.80],"guideLabel": { text: 'Urban: %v' } }],
+                 
+                 legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+                var myConfig4 = {
+                title: {
+                    text: 'Rental'
+                },
+                "type": "line", "series": [{ "showInLegend": true,"legendText": "Rural","values": [866.19, 850.47, 879.76, 1176.19, 1371.61, 1569.69, 1657.65, 1673.90, 899.47, 519, 402.52, 479.97],"guideLabel": { text: 'Rural: %v' } }, {"showInLegend": true,"legendText": "Urban", "values": [1229.5, 801.75, 583.75, 1084.75, 2160.96, 952.30, 1429.23, 1313.65,1811.28,2621.42,2093.95,1887.81],"guideLabel": { text: 'Urban: %v' } }],
+                 
+                 legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                 crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+                var myConfig5 = {
+                title: {
+                    text: 'Education'
+                },
+                "type": "line", "series": [{ "showInLegend": true,"legendText": "Rural","values": [407.73, 507.78, 1132.21, 1050.11, 574.98, 1381.81, 302.14, 409.89, 17.02, 21.75, 7.8, 8],"guideLabel": { text: 'Rural: %v' } }, {"showInLegend": true,"legendText": "Urban", "values": [870.6, 350.75, 727.8, 361.85, 479, 1005.88, 446.61, 643.65,344.42,12.38,1249.04,479.76],"guideLabel": { text: 'Urban: %v' } }],
+                 
+                 legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                 crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+                var myConfig6 = {
+                title: {
+                    text: 'Cloths'
+                },
+                "type": "line", "series": [{ "showInLegend": true,"legendText": "Rural","values": [1573.21, 1191.71, 2503.61, 1230.11, 1812.41, 3635.81, 1160.65, 1056.27, 273.2, 360.87, 882.9, 1327.72],"guideLabel": { text: 'Rural: %v' } }, {"showInLegend": true,"legendText": "Urban", "values": [865.65, 1109.5, 1613.75, 1092.5, 800.76, 1644.61, 551.15, 497.30,297.95,462.38,366.09,359.52],"guideLabel": { text: 'Urban: %v' } }],
+                 
+                 legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                 crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+                var myConfig7 = {
+                title: {
+                    text: 'Home Appliances'
+                },
+                "type": "line", "series": [{ "showInLegend": true,"legendText": "Rural","values": [1590.92, 2388.97, 1958.66, 1485.16, 629, 1732.03, 1876.81, 1136, 285.65, 117.12, 376, 1040.6],"guideLabel": { text: 'Rural: %v' } }, {"showInLegend": true,"legendText": "Urban", "values": [1489.6, 1076.55, 988.5, 1278.4, 497.69, 307.69, 1982.69, 224.03,291.66,236.19,1234.28,352.14],"guideLabel": { text: 'Urban: %v' } }],
+                 
+                 legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                 crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+                var myConfig8 = {
+                title: {
+                    text: 'Entertainment'
+                },
+                "type": "line", "series": [{ "showInLegend": true,"legendText": "Rural","values": [506.14, 3559.45, 634.07, 394.09, 512.85, 449.67, 260.18, 456.4, 262.35, 131.17, 123.2, 164.17],"guideLabel": { text: 'Rural: %v' } }, {"showInLegend": true,"legendText": "Urban", "values": [493, 567.6, 328.85, 237.5, 373.53, 346.53, 234.76, 136.84,378.57,283.14,242.61,372.19],"guideLabel": { text: 'Urban: %v' } }],
+                 
+                 legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                 crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+                var myConfig9 = {
+                title: {
+                    text: 'Others'
+                },
+                "type": "line", "series": [{ "showInLegend": true,"legendText": "Rural","values": [7109.92, 4308.28, 4923.14, 5511.90, 6413.47, 8394.14, 8074.52, 7558.98, 1379.67, 1088.47, 2334.57, 5217.72],"guideLabel": { text: 'Rural: %v' } }, {"showInLegend": true,"legendText": "Urban", "values": [8860.45, 8098.65, 5925.4, 6675, 1239.88, 1757.34, 784.23, 14885.04,2183.14,2085.19,3030.95,2099.04],"guideLabel": { text: 'Urban: %v' } }],
+                 
+                 legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+                 crosshairX: {
+                    plotLabel: {
+                        multiple: true,
+                        borderRadius: 500,
+                        fontFamily: 'Georgia',
+                        padding: '5 10'
+                    }
+                },
+                scaleX: {
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    label: { text: 'Average expense' },
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['    August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)']
+                },
+            };
+zingchart.render({ 
+	id : 'weeklyfood', 
+	data : myConfig, 
+	height: "100%", 
+	width: "100%" 
+});
+zingchart.render({ 
+	id : 'weeklyhospital', 
+	data : myConfig2, 
+	height: "100%", 
+	width: "100%" 
+});
+            zingchart.render({ 
+	id : 'weeklytransport', 
+	data : myConfig3, 
+	height: "100%", 
+	width: "100%" 
+            });
+             zingchart.render({ 
+	id : 'weeklyrental', 
+	data : myConfig4, 
+	height: "100%", 
+	width: "100%" 
+             });
+            zingchart.render({ 
+	id : 'weeklyeducation', 
+	data : myConfig5, 
+	height: "100%", 
+	width: "100%" 
+            });
+            zingchart.render({ 
+	id : 'weeklycloths', 
+	data : myConfig6, 
+	height: "100%", 
+	width: "100%" 
+            });
+            zingchart.render({ 
+	id : 'weeklyhome', 
+	data : myConfig7, 
+	height: "100%", 
+	width: "100%" 
+            });
+            zingchart.render({ 
+	id : 'weeklyentertainment', 
+	data : myConfig8, 
+	height: "100%", 
+	width: "100%" 
+            });
+            zingchart.render({ 
+	id : 'weeklyothers', 
+	data : myConfig9, 
+	height: "100%", 
+	width: "100%" 
+});
+        });
+    </script>
+    <script type="text/javascript">
+        zingchart.loadModules('scalableyaxis', function (e) {
+
+            let foodv = () => {
+                let foodv = [0,48.63,-3.19,1.29,14.22,27.59,-22.98,-0.83,-10.81,-0.39,-6.05,3.92];
+
+                return foodv;
+            }
+
+            let hospitalv = () => {
+                let hospitalv = [0,27.3,6.7,-12.5,52.5,69.7,-38.6,-13.7,-58.4,9.4,-38.7,98.3];
+
+                return hospitalv;
+            }
+
+            let transportv = () => {
+                let v = [0,68.8,-19.7,14.6,1.3,-9.3,2.7,-3.8,-74.9,37.7,2.3,0.8];
+
+                return v;
+            }
+
+            let rentalv = () => {
+                let rentalv = [0,-15.1,-6.0,46.2,41.7,-15.6,15.5,-1.6,-22.1,2.4,-20.8,-2.0];
+
+                return rentalv;
+            }
+            let educationv = () => {
+                let v = [0,-17.94,60.92,12.57,-34.65,51.48,-57.49,54.66,-75.93,-85.72,36.45,-74.40];
+
+                return v;
+            }
+            let clothsv = () => {
+                let v = [0,-13.37,90.23,-46.51,25.47,91.47,-66.12,-9.14,-67.87,40.50,78.11,41.05];
+
+                return v;
+            }
+            let homeappliancesv = () => {
+                let v = [0,26.14,-16.27,-13.81,-58.63,86.73,74.37,-55.87,-65.88,-31.37,97.68,95.08];
+
+                return v;
+            }
+            let entertainmentv = () => {
+                let v = [0,34.48,-20.65,-35.85,36.25,-11.02,-39.50,40.39,-14.54,-39.31,-10.45,43.50];
+
+                return v;
+            }
+            let othersv = () => {
+                let v = [0,-27.93,-5.14,12.21,-19.27,31.79,-8.45,72.83,-83.29,-13.56,79.82,60.98];
+
+                return v;
+            }
+
+            let chartConfig = {
+                title: {
+                    text: 'Percentage categorywise',
+                    backgroundColor: '#fff',
+                    color: '#0000'
+                },
+                type: 'line',
+                theme: 'classic',
+                backgroundColor: '#fff',
+                flat: true,
+                legend: {
+                    adjustLayout: true,
+                    margin: 'auto auto 10px auto',
+                    backgroundColor: '#FFF',
+                    borderRadius: '3px',
+                    layout: 'float',
+                    marker: {
+                        type: 'match',
+                        showLine: true
+                    },
+                    shadow: false
+                },
+                plot: {
+                    tooltip: {
+                        visible: false
+                    },
+                    animation: {
+                        effect: 'ANIMATION_SLIDE_LEFT',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 200,
+                    },
+                    aspect: 'spline',
+                    lineWidth: '2px',
+                    marker: {
+                        visible: false
+                    },
+                    maxNodes: 9999,
+                    maxTrackers: 9999,
+                    shadow: false
+                },
+                plotarea: {
+                    margin: 'dynamic'
+                },
+                scaleX: {
+                    format: '%v',
+                    "LabelRotation": -30,
+                    "angle": -90,
+                    item: {
+                        angle: -30
+                    },
+                    
+
+                    itemsOverlap: true,
+                    maxItems: 12,
+                    labels: ['August(2019)', 'September(2019)', 'Ocotber(2019)', 'November(2019)', 'December(2019)', 'January(2020)', 'Feburary(2020)', 'March(2020)', 'April(2020)', 'May(2020)', 'June(2020)', 'July(2020)'],
+                    guide: {
+                        lineColor: '#33994a',
+                        lineStyle: 'solid'
+                    },
+                    item: {
+                        color: '#333'
+                    },
+                    itemsOverlap: true,
+                    lineWidth: '0px',
+                    minorGuide: {
+                        lineColor: '#33994a',
+                        lineStyle: 'solid'
+                    },
+                    minorTick: {
+                        visible: false
+                    },
+                    minorTicks: 4,
+                    refLine: {
+                        lineColor: '#33994a',
+                        lineWidth: '2px',
+                        visible: true
+                    },
+                    refValue: 0,
+                    step: 20,
+                    tick: {
+                        lineColor: '#FFF',
+                        lineWidth: '1px',
+                        placement: 'ref-auto'
+                    },
+                    zooming: true
+                },
+                scaleY: {
+                    values: '-100:100:50',
+                    guide: {
+                        lineColor: '#33994a',
+                        lineStyle: 'solid'
+                    },
+                    item: {
+                        color: '#333'
+                    },
+                    lineWidth: '0px',
+                    minorGuide: {
+                        lineColor: '#33994a',
+                        lineStyle: 'solid'
+                    },
+                    minorTick: {
+                        visible: false
+                    },
+                    minorTicks: 4,
+                    refLine: {
+                        lineColor: '#33994a',
+                        lineWidth: '1px'
+                    },
+                    refValue: 0,
+                    tick: {
+                        visible: false
+                    },
+                    zooming: true
+                },
+                crosshairX: {
+                    lineStyle: 'dashed',
+                    plotLabel: {
+                        text: '%v%',
+                        padding: '4px 6px',
+                        backgroundColor: '#b5e8c0',
+                        borderColor: '#33994a',
+                        borderRadius: '3px',
+                        borderWidth: '2px',
+                        color: 'white',
+                        decimals: 2,
+                        fontSize: '12px',
+                        htmlMode: true,
+                        multiple: true,
+                        shadow: false
+                    },
+                    scaleLabel: {
+                        visible: false
+                    }
+                },
+                series: [
+                    {
+                        text: 'Food',
+                        guideLabel: {
+                            text: 'Food: %v%'
+                        },
+
+                        values: foodv(),
+                        dataEquation: '<b><span style=\'color:#000;\'>sin(</span></b> %k° <b><span style=\'color:#000\'>)</span></b> = <b><span style=\'color:#000\'>%v</span></b>',
+                        lineColor: '#E0F7FA',
+                        lineStyle: 'dashed'
+                    },
+                    {
+                        text: 'Hospital',
+                        guideLabel: {
+                            text: 'Hospital: %v%'
+                        },
+                        values: hospitalv(),
+                        dataEquation: '<b><span style=\'color:#6e6c6c;\'>cos(</span></b> %k°<b><span style=\'color:#6e6c6c;\'>)</span></b> = <b><span style=\'color:#6e6c6c\'>%v</span></b>',
+                        lineColor: '#6e6c6c',
+                        lineStyle: 'dashed'
+                    },
+                    {
+                        text: 'Transport',
+                        guideLabel: {
+                            text: 'Transport: %v%'
+                        },
+                        values: transportv(),
+                        dataEquation: '<b><span style=\'color:#000\'>sin(</span></b>%k°<b><span style=\'color:#000\'>)</span> + <span style=\'color:#6e6c6c;\'>cos(</span></b> %k°<b><span style=\'color:#6e6c6c;\'>)</span></b> = <b><span style=\'color:#3f0bff;\'>%v</span></b>',
+                        lineColor: '#3f0bff',
+                        lineStyle: 'dashed'
+
+                    },
+                    {
+                        text: 'Rental',
+                        guideLabel: {
+                            text: 'Rental: %v%'
+                        },
+
+                        values: rentalv(),
+                        dataEquation: '<b><span style=\'color:#000;\'>sin(</span></b> %k° <b><span style=\'color:#000\'>)</span></b> = <b><span style=\'color:#000\'>%v</span></b>',
+                        lineColor: '#00BCD4',
+                        lineStyle: 'dashed'
+                    },
+                    {
+                        text: 'Education',
+                        guideLabel: {
+                            text: 'Education: %v%'
+                        },
+
+                        values: educationv(),
+                        dataEquation: '<b><span style=\'color:#000;\'>sin(</span></b> %k° <b><span style=\'color:#000\'>)</span></b> = <b><span style=\'color:#000\'>%v</span></b>',
+                        lineColor: '#006064',
+                        lineStyle: 'dashed'
+                    },
+                    {
+                        text: 'Cloths',
+                        guideLabel: {
+                            text: 'Cloths: %v%'
+                        },
+
+                        values: clothsv(),
+                        dataEquation: '<b><span style=\'color:#000;\'>sin(</span></b> %k° <b><span style=\'color:#000\'>)</span></b> = <b><span style=\'color:#000\'>%v</span></b>',
+                        lineColor: '#006064',
+                        lineStyle: 'dashed'
+                    },
+                    {
+                        text: 'Home appliances',
+                        guideLabel: {
+                            text: 'Home appliances: %v%'
+                        },
+
+                        values: homeappliancesv(),
+                        dataEquation: '<b><span style=\'color:#000;\'>sin(</span></b> %k° <b><span style=\'color:#000\'>)</span></b> = <b><span style=\'color:#000\'>%v</span></b>',
+                        lineColor: '#006064',
+                        lineStyle: 'dashed'
+                    },
+                    {
+                        text: 'Entertainment',
+                        guideLabel: {
+                            text: 'Entertainment: %v%'
+                        },
+
+                        values: entertainmentv(),
+                        dataEquation: '<b><span style=\'color:#000;\'>sin(</span></b> %k° <b><span style=\'color:#000\'>)</span></b> = <b><span style=\'color:#000\'>%v</span></b>',
+                        lineColor: '#8BC34A',
+                        lineStyle: 'dashed'
+                    },
+                    {
+                        text: 'Others',
+                        guideLabel: {
+                            text: 'Others: %v%'
+                        },
+
+                        values: othersv(),
+                        dataEquation: '<b><span style=\'color:#000;\'>sin(</span></b> %k° <b><span style=\'color:#000\'>)</span></b> = <b><span style=\'color:#000\'>%v</span></b>',
+                        lineColor: '#33691E',
+                        lineStyle: 'dashed'
+                    }
+                ]
+            };
+
+            zingchart.render({
+                id: 'percentagecategorywise',
+                data: chartConfig,
+                output: 'canvas',
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        zingchart.loadModules('scalableyaxis', function (e) {
+            let chartConfig = {
+                type: 'line',
+                title: {
+                    text: ''
+                },
+                legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    postion: 'bottom',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove'
+
+                },
+
+                plot: {
+                    tooltip: {
+                        visible: false
+                    },
+                    cursor: 'hand'
+                },
+                "scale-y": {
+                    label: { text: 'No. of households' },
+                    "angle": -90,
+                    item: {
+                        angle: -90
+                    },
+                    itemsOverlap: true,
+
+
+                },
+
+                scaleX: {
+                    markers: [],
+                    offsetEnd: '75px',
+                    labels: ['Baseline', 'Followup-1', 'Followup-2', 'Followup-3', 'Followup-4']
+                },
+                crosshairX: {},
+                series: [
+                    {
+                        text: 'Phase-1',
+                        values: [272, 263, 262, 261, 261]
+                    },
+                    {
+                        text: 'Phase-2',
+                        values: [360, 356, 353, 353, 314]
+                    },
+                    {
+                        text: 'Phase-3',
+                        values: [270, 236, 217, 205, 198]
+                    },
+                    {
+                        text: 'Overall',
+                        values: [902, 855, 832, 819, 773]
+                    }
+                ]
+            };
+
+            zingchart.render({
+                id: 'chart_phase1',
+                data: chartConfig,
+                height: '80%',
+                width: '100%',
+            });
+
+            /*
+            * define Marker class to construct
+            * markers on the fly easier.
+            */
+            function Marker(_index) {
+                return {
+                    type: 'line',
+                    flat: false,
+                    lineColor: '#424242',
+                    lineWidth: '1px',
+                    range: [_index]
+                }
+            }
+
+            /*
+            * define Label class to construct
+            * labels on the fly easier.
+            */
+            function Label(_text, _id, _offsetX, _offsetY) {
+                return {
+                    id: _id,
+                    text: _text,
+                    angle: 0,
+                    padding: '5px 10px 5px 10px',
+                    backgroundColor: '#eeeeee',
+                    cursor: 'pointer',
+                    flat: false,
+                    fontSize: '13px',
+                    fontStyle: 'bold',
+                    offsetX: _offsetX,
+                    offsetY: _offsetY ? _offsetY : 0,
+                    textAlign: 'left',
+                    wrapText: true
+                }
+            }
+
+            // format the label text
+            let formatLabelText = (_nodeindex, _scaleText) => {
+                let plotInfo = null;
+                let nodeInfo;
+                let seriesText = '';
+                let labelString = isNaN(_scaleText) ? _scaleText + '<br>' : '';
+                let color = '';
+                let plotLength = zingchart.exec('myChart', 'getplotlength', {
+                    graphid: 0
+                });
+
+                for (let i = 0; i < plotLength; i++) {
+                    plotInfo = zingchart.exec('myChart', 'getobjectinfo', {
+                        object: 'plot',
+                        plotindex: i
+                    });
+                    nodeInfo = zingchart.exec('myChart', 'getobjectinfo', {
+                        object: 'node',
+                        plotindex: i,
+                        nodeindex: _nodeindex
+                    });
+                    color = plotInfo.lineColor ? plotInfo.lineColor : plotInfo.backgroundColor1;
+                    seriesText = plotInfo.text ? plotInfo.text : ('Series ' + (i + 1));
+                    labelString += '<span style="color:' + color + '">' + seriesText + ':</span>' +
+                        ' ' + nodeInfo.value + '<br>';
+                }
+
+                return labelString;
+            };
+
+            // global array for markers since you can only update the whole array
+            let markersArray = [];
+            let labelsArray = [];
+
+            // hash table for markers
+            let markerHashTable = {};
+
+            /*
+            * Register a graph click event and then render a chart with the markers
+            */
+            zingchart.bind('myChart', 'click', (e) => {
+                let xyInformation;
+                let nodeIndex;
+                let scaleText;
+
+                // make sure not a node click and click happend in plotarea
+                if (e.target != 'node' && e.plotarea) {
+                    xyInformation = zingchart.exec('myChart', 'getxyinfo', {
+                        x: e.ev.clientX,
+                        y: e.ev.clientY
+                    });
+
+                    // if anything is found, 0 corresponds to scale-x
+                    if (xyInformation && xyInformation[0] && xyInformation[2]) {
+                        nodeIndex = xyInformation[0].scalepos;
+                        scaleText = xyInformation[0].scaletext;
+
+                        // check hash table. Add marker
+                        if (!markerHashTable['nodeindex' + nodeIndex]) {
+                            let nodeInfo = zingchart.exec('myChart', 'getobjectinfo', {
+                                object: 'node',
+                                nodeindex: nodeIndex,
+                                plotindex: 0
+                            });
+
+                            let labelText = formatLabelText(nodeIndex, scaleText);
+                            let labelId = 'label_' + nodeIndex;
+                            // create a marker
+                            let newMarker = new Marker(nodeIndex);
+                            let newLabel = new Label(labelText, labelId, nodeInfo.x, nodeInfo.y);
+
+                            markerHashTable['nodeindex' + nodeIndex] = true;
+                            markersArray.push(newMarker);
+
+                            labelsArray.push(newLabel);
+
+                            // render the marker
+                            chartConfig.scaleX.markers = markersArray;
+                            chartConfig.labels = labelsArray;
+                            zingchart.exec('myChart', 'setdata', {
+                                data: chartConfig
+                            });
+                        } else {
+                            console.log('---marker already exists----');
+                        }
+                    }
+                }
+            });
+
+            /*
+            * Register a node_click event and then render a chart with the markers
+            */
+            zingchart.bind('myChart', 'node_click', (e) => {
+                // check hash table. Add marker
+                if (!markerHashTable['nodeindex' + e.nodeindex]) {
+                    let labelText = formatLabelText(e.nodeindex, e.scaletext);
+                    let labelId = 'label_' + e.nodeindex;
+                    // create a marker
+                    let newMarker = new Marker(e.nodeindex, labelText, e.plotindex);
+                    let newLabel = new Label(labelText, labelId, e.ev.layerX, e.ev.layerY);
+
+                    markerHashTable['nodeindex' + e.nodeindex] = true;
+                    markersArray.push(newMarker);
+
+                    labelsArray.push(newLabel);
+
+                    // render the marker
+                    chartConfig.scaleX.markers = markersArray;
+                    chartConfig.labels = labelsArray;
+                    zingchart.exec('myChart', 'setdata', {
+                        data: chartConfig
+                    });
+                } else {
+                    console.log('---marker already exists----');
+                }
+            });
+
+            let labelMouseDown = false;
+            let labelId = null;
+
+            /*
+            * bind mousedown event for dragging label
+            */
+            zingchart.bind('myChart', 'label_mousedown', (e) => {
+                labelMouseDown = true;
+                labelId = e.labelid;
+                zingchart.exec('myChart', 'hideguide');
+            });
+
+            zingchart.bind('myChart', 'mousemove', (e) => {
+                if (labelMouseDown && labelId) {
+                    zingchart.exec('myChart', 'updateobject', {
+                        type: 'label',
+                        data: {
+                            id: labelId,
+                            offsetY: e.ev.layerY
+                        }
+                    });
+                }
+            });
+
+            zingchart.bind('myChart', 'mouseup', () => {
+                labelMouseDown = false;
+                labelId = null;
+                zingchart.exec('myChart', 'showguide');
+            });
+
+            zingchart.bind('myChart', 'doubleclick', (e) => {
+                console.log(e);
+            });
+        });
+    </script>
+
+
+    
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) {
+            // chart configuration
+            let chartConfig = {
+                type: 'bar',
+                title: {
+                    text: 'Click on the Scale to start the drag',
+                    adjustLayout: true,
+                    flat: true
+                },
+                subtitle: {
+                    text: 'Click Button To Reset The Scales'
+                },
+                scalableYaxis: { // need this object
+                    scalable: true,
+                    chartid: 'myChart', // could get chartId in a more dynamic way if needed
+                },
+                scaleY: {
+                    maxItems: 10,
+                    lineColor: '#e53935' // make scale line color match (not necessary)
+                },
+                scaleY2: {
+                    maxItems: 6,
+                    lineColor: '#9c27b0', // make scale line color match (not necessary)
+                    guide: {
+                        visible: false // you can change this to true to show the guide
+                    },
+                    placement: 'default'
+                },
+                scaleY3: {
+                    lineColor: '#4caf50' // make scale line color match (not necessary)
+                    // dont even have to set maxItems!
+                },
+                scaleY4: {
+                    placement: 'default',
+                    lineColor: '#00bcd4' // make scale line color match (not necessary)
+                },
+                scaleY5: {
+                    lineColor: '#ffeb3b',
+                },
+                scaleY6: {
+                    lineColor: '#3f51b5'
+                },
+                plotarea: {
+                    margin: 'dynamic'
+                },
+                series: [{
+                    values: [35, 42, 67, 89, 25, 34, 67, 85],
+                    lineColor: '#e53935',
+                    marker: {
+                        backgroundColor: '#e53935'
+                    },
+                    scales: 'scale-x, scale-y'
+                }, {
+                    values: [135, 242, 167, 289, 325, 434, 567, 785],
+                    lineColor: '#9c27b0',
+                    marker: {
+                        backgroundColor: '#9c27b0'
+                    },
+                    scales: 'scale-x, scale-y-2'
+                },
+                {
+                    values: [25135, 25542, 33167, 22289, 32335, 43224, 51167, 73385],
+                    lineColor: '#4caf50',
+                    marker: {
+                        backgroundColor: '#4caf50'
+                    },
+                    scales: 'scale-x, scale-y-3'
+                },
+                {
+                    values: [5135, 2542, 3167, 2289, 3335, 4224, 5167, 7385],
+                    lineColor: '#00bcd4',
+                    marker: {
+                        backgroundColor: '#00bcd4'
+                    },
+                    scales: 'scale-x, scale-y-4'
+                },
+                {
+                    values: [135, 542, 167, 289, 335, 224, 1167, 385],
+                    lineColor: '#ffeb3b',
+                    marker: {
+                        backgroundColor: '#ffeb3b'
+                    },
+                    scales: 'scale-x, scale-y-5'
+                },
+                {
+                    values: [44135, 22542, 11167, 21289, 22335, 41224, 41167, 63385],
+                    lineColor: '#3f51b5',
+                    marker: {
+                        backgroundColor: '#3f51b5'
+                    },
+                    scales: 'scale-x, scale-y-6'
+                }
+                ],
+                labels: [
+                    {
+                        x: 15,
+                        y: 5,
+                        text: 'Reset',
+                        border: '1px solid black',
+                        padding: 7,
+                        borderRadius: 4,
+                        cursor: 'pointer',
+                        id: 'reset-scales',
+                        hoverState: {
+                            border: '2px solid black'
+                        }
+                    }
+                ]
+            };
+
+            zingchart.bind(null, 'label_click', function (e) {
+                if (e.labelid === 'reset-scales') {
+                    /*
+                     * custom events for the plugin.
+                     * 1) getscaleminmax - allows you to get the current minMax value
+                     * for each scale AND the original. This allows you to save the
+                     * state of the scales.
+                     *    - maxValue/minValue are the original scale values
+                     *    - _maxValue/_minValue are the new scale values
+                     *
+                     * 2) resetscales - will reset the scales to the original value
+                     */
+                    console.log(zingchart.exec(e.loader.id, 'getscaleminmax'))
+                    zingchart.exec(e.loader.id, 'resetscales');
+                }
+            });
+            zingchart.render({
+                id: 'myChart',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+                modules: 'scalableYaxis'
+            });
+        });
+    </script>
+    
+    
+    <script>
+
+       
+            var piecharturbanConfig = {
+                type: 'pie',
+
+                backgroundColor: '',
+                title: {
+                    text: 'Marital status-Urban',
+                },
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Single',
+                        values: [42.89],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: 'Married',
+                        values: [46.7],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: 'Divorced/Seperated',
+                        values: [2.23],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: 'Widowed',
+                        values: [8.19],
+                        backgroundColor: '#93DE7F'
+                    }
+
+                ]
+            };
+
+            
+            zingchart.render({
+                id: 'piecharturban',
+                data: piecharturbanConfig,
+
+                height: '100%',
+                width: '100%',
+            });
+        
+    </script>
+	<script>
+
+       
+            var piecharturbanConfig = {
+                type: 'pie',
+
+                backgroundColor: '',
+                title: {
+                    text: 'Marital status',
+                },
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Single',
+                        values: [41.11],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: 'Married',
+                        values: [49.76],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: 'Divorced/Seperated',
+                        values: [1.22],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: 'Widowed',
+                        values: [7.91],
+                        backgroundColor: '#93DE7F'
+                    }
+
+                ]
+            };
+
+            
+            zingchart.render({
+                id: 'Smartpiecharturban',
+                data: piecharturbanConfig,
+
+                height: '100%',
+                width: '100%',
+            });
+        
+    </script>
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+
+                backgroundColor: '',
+                title: {
+                    text: 'Marital status-Rural',
+                },
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Single',
+                        values: [42.26],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: 'Married',
+                        values: [49.35],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: 'Divorced/Seperated',
+                        values: [0.81],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: 'Widowed',
+                        values: [7.58],
+                        backgroundColor: '#93DE7F'
+                    }
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'piechartrural',
+                data: chartConfig,
+
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Occupation-Urban',
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Government',
+                        values: [3.64],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: 'Private',
+                        values: [32.59],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: 'NGO',
+                        values: [0.20],
+                        backgroundColor: '#8B8B8B'
+                    },
+                    {
+                        text: 'Self business',
+                        values: [11.13],
+                        backgroundColor: '#F29E4A'
+                    },
+                    {
+                        text: 'Informal',
+                        values: [52.02],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: 'Others',
+                        values: [0.40],
+                        backgroundColor: '#50ADF5'
+                    }
+                    //{
+                    //    text: 'Divorced/Seperated',
+                    //    values: [1.28],
+                    //    backgroundColor: '#6877e5'
+                    //},
+                    //{
+                    //    text: 'Widowed',
+                    //    values: [7.78],
+                    //    backgroundColor: '#93DE7F'
+                    //},
+                    //{
+                    //    text: 'UG',
+                    //    values: [7.24],
+                    //    backgroundColor: '#F29E4A'
+                    //},
+                    //{
+                    //    text: 'PG',
+                    //    values: [1.7],
+                    //    backgroundColor: '#8B8B8B'
+                    //}
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'occupationstatusurban',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+	<script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Occupation',
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Government',
+                        values: [5.59],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: 'Private',
+                        values: [40.16],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: 'NGO',
+                        values: [0.0],
+                        backgroundColor: '#8B8B8B'
+                    },
+                    {
+                        text: 'Self business',
+                        values: [6.38],
+                        backgroundColor: '#F29E4A'
+                    },
+                    {
+                        text: 'Informal',
+                        values: [37.77],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: 'Others',
+                        values: [10.1],
+                        backgroundColor: '#50ADF5'
+                    }
+                    //{
+                    //    text: 'Divorced/Seperated',
+                    //    values: [1.28],
+                    //    backgroundColor: '#6877e5'
+                    //},
+                    //{
+                    //    text: 'Widowed',
+                    //    values: [7.78],
+                    //    backgroundColor: '#93DE7F'
+                    //},
+                    //{
+                    //    text: 'UG',
+                    //    values: [7.24],
+                    //    backgroundColor: '#F29E4A'
+                    //},
+                    //{
+                    //    text: 'PG',
+                    //    values: [1.7],
+                    //    backgroundColor: '#8B8B8B'
+                    //}
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'Smartoccupationstatusurban',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Occupation-Rural',
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Government',
+                        values: [6.74],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: 'Private',
+                        values: [40.24],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: 'NGO',
+                        values: [0.0],
+                        backgroundColor: '#8B8B8B'
+                    },
+                    {
+                        text: 'Self business',
+                        values: [4.86],
+                        backgroundColor: '#F29E4A'
+                    },
+                    {
+                        text: 'Informal',
+                        values: [48.07],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: 'Others',
+                        values: [0.10],
+                        backgroundColor: '#50ADF5'
+                    }
+                    //{
+                    //    text: 'Divorced/Seperated',
+                    //    values: [1.28],
+                    //    backgroundColor: '#6877e5'
+                    //},
+                    //{
+                    //    text: 'Widowed',
+                    //    values: [7.78],
+                    //    backgroundColor: '#93DE7F'
+                    //},
+                    //{
+                    //    text: 'UG',
+                    //    values: [7.24],
+                    //    backgroundColor: '#F29E4A'
+                    //},
+                    //{
+                    //    text: 'PG',
+                    //    values: [1.7],
+                    //    backgroundColor: '#8B8B8B'
+                    //}
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'occupationstatusrural',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+
+    
+    
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                title: {
+                    text: 'Total expense-Urban',
+                },
+                type: 'pie',
+                backgroundColor: '',
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [{
+                    text: 'Under 10000',
+                    values: [27.57],
+                    backgroundColor: '#50ADF5'
+                },
+                {
+                    text: '10000-20000',
+                    values: [50.17],
+                    backgroundColor: '#FF7965'
+                },
+                {
+                    text: '20000-30000',
+                    values: [16.61],
+                    backgroundColor: '#FFCB45'
+                },
+                {
+                    text: '30000-40000',
+                    values: [4.65],
+                    backgroundColor: '#6877e5'
+                },
+                {
+                    text: '40000-50000',
+                    values: [0.66],
+                    backgroundColor: '#F29E4A'
+                },
+                {
+                    text: 'Above 50000',
+                    values: [0.33],
+                    backgroundColor: '#8B8B8B'
+                }
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'chartContainerurban',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                title: {
+                    text: 'Total expense-Rural',
+                },
+                type: 'pie',
+                backgroundColor: '',
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [{
+                    text: 'Under 10000',
+                    values: [31.95],
+                    backgroundColor: '#50ADF5'
+                },
+                {
+                    text: '10000-20000',
+                    values: [51.75],
+                    backgroundColor: '#FF7965'
+                },
+                {
+                    text: '20000-30000',
+                    values: [12.81],
+                    backgroundColor: '#FFCB45'
+                },
+                {
+                    text: '30000-40000',
+                    values: [2.50],
+                    backgroundColor: '#6877e5'
+                },
+                {
+                    text: '40000-50000',
+                    values: [0.67],
+                    backgroundColor: '#F29E4A'
+                },
+                {
+                    text: 'Above 50000',
+                    values: [0.33],
+                    backgroundColor: '#8B8B8B'
+                }
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'chartContainerrural',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+
+    
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Education status-Urban',
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Illiterate',
+                        values: [18.03],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: '1-5',
+                        values: [20.11],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: '6-10',
+                        values: [38.72],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: '11-12',
+                        values: [11.49],
+                        backgroundColor: '#93DE7F'
+                    },
+                    {
+                        text: 'Diploma',
+                        values: [3.02],
+                        backgroundColor: '#00bcd4'
+                    },
+                    {
+                        text: 'UG',
+                        values: [7.26],
+                        backgroundColor: '#F29E4A'
+                    },
+                    {
+                        text: 'PG',
+                        values: [1.36],
+                        backgroundColor: '#8B8B8B'
+                    }
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'piecharteducationurban',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+	<script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Education status',
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Illiterate',
+                        values: [18.34],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: '1-5',
+                        values: [16.18],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: '6-10',
+                        values: [38.1],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: '11-12',
+                        values: [11.67],
+                        backgroundColor: '#93DE7F'
+                    },
+                    {
+                        text: 'Diploma',
+                        values: [4.14],
+                        backgroundColor: '#00bcd4'
+                    },
+                    {
+                        text: 'UG',
+                        values: [9.6],
+                        backgroundColor: '#F29E4A'
+                    },
+                    {
+                        text: 'PG',
+                        values: [1.97],
+                        backgroundColor: '#8B8B8B'
+                    }
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'Smartpiecharteducationurban',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Education status-Rural',
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Illiterate',
+                        values: [16.74],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: '1-5',
+                        values: [15.19],
+                        backgroundColor: '#FFCB45'
+                    },
+                    {
+                        text: '6-10',
+                        values: [43.32],
+                        backgroundColor: '#6877e5'
+                    },
+                    {
+                        text: '11-12',
+                        values: [11.42],
+                        backgroundColor: '#93DE7F'
+                    },
+                    {
+                        text: 'Diploma',
+                        values: [4.23],
+                        backgroundColor: '#00bcd4'
+                    },
+                    {
+                        text: 'UG',
+                        values: [7.23],
+                        backgroundColor: '#F29E4A'
+                    },
+                    {
+                        text: 'PG',
+                        values: [1.87],
+                        backgroundColor: '#8B8B8B'
+                    }
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'piecharteducationrural',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+
+
+    
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Percentage of OPD expenses(Rs.463)-Urban'
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Registration-Rs.121',
+                        values: [26.16],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: 'Medicines-Rs.244',
+                        values: [52.79],
+                        backgroundColor: '#FFCB45'
+                    },
+
+
+                    {
+                        text: 'Laboratory charges-Rs.70',
+                        values: [15.06],
+                        backgroundColor: '#F29E4A'
+                    },
+                    {
+                        text: 'Others-Rs.27',
+                        values: [5.98],
+                        backgroundColor: '#6877e5'
+                    }
+                    //{
+                    //    text: 'Dietary charges-Rs.3',
+                    //    values: [0.44],
+                    //    backgroundColor: '#50ADF5'
+                    //}
+
+
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'piechartopdurban',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Percentage of OPD expenses(Rs.786)-Rural'
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [
+                    {
+                        text: 'Registration-Rs.263',
+                        values: [33.51],
+                        backgroundColor: '#FF7965'
+                    },
+                    {
+                        text: 'Medicines-Rs.346',
+                        values: [44.10],
+                        backgroundColor: '#FFCB45'
+                    },
+
+                    {
+                        text: 'Laboratory charges-Rs.147',
+                        values: [18.75],
+                        backgroundColor: '#F29E4A'
+                    },
+                    {
+                        text: 'Others-Rs.28',
+                        values: [3.65],
+                        backgroundColor: '#50ADF5'
+                    }
+
+
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'piechartopdrural',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+
+
+   
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Percentage of IPD expenses(Rs.23289)-Urban'
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [{
+                    text: 'Procedure-Rs.12122',
+                    values: [52.05],
+                    backgroundColor: '#50ADF5'
+                },
+                
+                {
+                    text: 'Medicines-Rs.3604',
+                    values: [15.47],
+                    backgroundColor: '#FFCB45'
+                },
+                
+                {
+                    text: 'Surgery-Rs.4231',
+                    values: [18.17],
+                    backgroundColor: '#93DE7F'
+                },
+                {
+                    text: 'Laboratory charges-Rs.1569',
+                    values: [6.74],
+                    backgroundColor: '#F29E4A'
+                },
+                {
+                    text: 'others-Rs.1764',
+                    values: [7.57],
+                    backgroundColor: '#8B8B8B'
+                }
+
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'piechartipdurban',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+    <script>
+
+        zingchart.loadModules('scalableyaxis', function (e) { // CHART CONFIG
+            // -----------------------------
+            let chartConfig = {
+                type: 'pie',
+                backgroundColor: '',
+                title: {
+                    text: 'Percentage of IPD expenses(Rs.42699)-Rural'
+                },
+
+                plot: {
+                    tooltip: {
+                        text: '%npv%',
+                        padding: '5 10',
+                        fontFamily: 'Open Sans',
+                        fontSize: '18px'
+                    },
+                    valueBox: {
+                        text: '%t\n%npv%',
+                        fontFamily: 'Open Sans',
+                        placement: 'out'
+                    },
+                    animation: {
+                        effect: 'ANIMATION_EXPAND_VERTICAL',
+                        method: 'ANIMATION_REGULAR_EASE_OUT',
+                        sequence: 'ANIMATION_BY_PLOT',
+                        speed: 500
+                    },
+                    borderColor: '',
+                    borderWidth: ''
+                },
+                plotarea: {
+                    margin: '20 0 0 0'
+                },
+                source: {
+                    text: '',
+                    fontColor: '#8e99a9',
+                    fontFamily: 'Open Sans',
+                    textAlign: 'left'
+                },
+                series: [{
+                    text: 'Procedure-Rs.21610',
+                    values: [50.61],
+                    backgroundColor: '#50ADF5'
+                },
+                
+                {
+                    text: 'Medicines-Rs.8726',
+                    values: [20.44],
+                    backgroundColor: '#FFCB45'
+                },
+                
+                {
+                    text: 'Surgery-Rs.7195',
+                    values: [16.85],
+                    backgroundColor: '#93DE7F'
+                },
+                {
+                    text: 'Laboratory charges-Rs.3116',
+                    values: [7.30],
+                    backgroundColor: '#F29E4A'
+                },
+                {
+                    text: 'others-Rs.2053',
+                    values: [4.81],
+                    backgroundColor: '#8B8B8B'
+                }
+
+
+                ]
+            };
+
+            // RENDER CHARTS
+            // -----------------------------
+            zingchart.render({
+                id: 'piechartipdrural',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+
+        zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/'
+
+        zingchart.defineModule('toolbar-zoom', 'plugin', function (chartJson) {
+            /*
+            * If the 'labels' array of objects already exists, do nothing.
+            * If it does not exist, initialize it as an empty array.
+            * We do this to avoid obliteration of any existing labels.
+            */
+            chartJson.labels = chartJson.labels ? chartJson.labels : [];
+
+
+            var optionsObj = chartJson["toolbar-zoom"];
+
+            if (optionsObj["background-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["background-color"] = optionsObj["background-color"];
+                    }
+                }
+            }
+            /* Same thing as above, but for border-color.  */
+            if (optionsObj["border-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["border-color"] = optionsObj["border-color"];
+                    }
+                }
+            }
+            return chartJson;
+        });
+
+        var myConfig = {
+            "type": "bar",
+            "title": {
+                "text": "Percentage of assets-Urban"
+            },
+            "toolbar-zoom": { // Add the toolbar
+                "background-color": "#FFFFFF #D0D7E1",
+                "border-color": "#ACAFB6"
+            },
+            "scale-x": {
+                "zooming": true,
+
+                "values": ['Own house', 'Pucca', 'Water supply', 'Toilet', 'LPG', 'Kitchen sink', 'Live stock', 'Smartphone', 'Washing machine', 'Refrigerator', 'TV', 'Two-wheeler', 'Tractor', 'Car', 'Maid', 'Internet', 'AC'],
+                "LabelRotation": -45,
+                "angle": -90,
+                item: {
+                    angle: -45
+                },
+                itemsOverlap: true,
+                maxItems: 17,
+            },
+            "scrollX": {},
+
+            "series": [
+                {
+                    "values": [65.78, 61.13, 58.47, 87.38, 96.68, 41.86, 8.64, 73.09, 37.87, 73.42, 93.69, 72.43, 1.66, 1.33, 1.00, 71.43, 11.63]
+                }
+            ]
+        };
+
+        zingchart.render({
+            id: 'chart_divurban',
+            data: myConfig,
+            height: 400,
+            width: '100%',
+            modules: "toolbar-zoom" // Load the toolbar
+        });
+    </script>
+	 <script type="text/javascript">
+
+        zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/'
+
+        zingchart.defineModule('toolbar-zoom', 'plugin', function (chartJson) {
+            /*
+            * If the 'labels' array of objects already exists, do nothing.
+            * If it does not exist, initialize it as an empty array.
+            * We do this to avoid obliteration of any existing labels.
+            */
+            chartJson.labels = chartJson.labels ? chartJson.labels : [];
+
+
+            var optionsObj = chartJson["toolbar-zoom"];
+
+            if (optionsObj["background-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["background-color"] = optionsObj["background-color"];
+                    }
+                }
+            }
+            /* Same thing as above, but for border-color.  */
+            if (optionsObj["border-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["border-color"] = optionsObj["border-color"];
+                    }
+                }
+            }
+            return chartJson;
+        });
+
+        var myConfig = {
+            "type": "bar",
+            "title": {
+                "text": "Percentage of assets"
+            },
+            "toolbar-zoom": { // Add the toolbar
+                "background-color": "#FFFFFF #D0D7E1",
+                "border-color": "#ACAFB6"
+            },
+            "scale-x": {
+                "zooming": true,
+
+                "values": ['Own house', 'Pucca', 'Water supply', 'Toilet', 'LPG', 'Kitchen sink', 'Live stock', 'Smartphone', 'Washing machine', 'Refrigerator', 'TV', 'Two-wheeler', 'Tractor', 'Car', 'Maid', 'Internet', 'AC'],
+                "LabelRotation": -45,
+                "angle": -90,
+                item: {
+                    angle: -45
+                },
+                itemsOverlap: true,
+                maxItems: 17,
+            },
+            "scrollX": {},
+
+            "series": [
+                {
+                    "values": [83.82, 77.45, 66.18, 83.33, 100.0, 46.57, 25.0, 94.12, 27.45, 79.41, 98.53, 82.84, 2.45, 2.45, 0.0, 89.71, 8.33]
+                }
+            ]
+        };
+
+        zingchart.render({
+            id: 'Smartchart_divurban',
+            data: myConfig,
+            height: 400,
+            width: '100%',
+            modules: "toolbar-zoom" // Load the toolbar
+        });
+    </script>
+    <script type="text/javascript">
+
+        zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/'
+
+        zingchart.defineModule('toolbar-zoom', 'plugin', function (chartJson) {
+            /*
+            * If the 'labels' array of objects already exists, do nothing.
+            * If it does not exist, initialize it as an empty array.
+            * We do this to avoid obliteration of any existing labels.
+            */
+            chartJson.labels = chartJson.labels ? chartJson.labels : [];
+
+
+            var optionsObj = chartJson["toolbar-zoom"];
+
+            if (optionsObj["background-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["background-color"] = optionsObj["background-color"];
+                    }
+                }
+            }
+            /* Same thing as above, but for border-color.  */
+            if (optionsObj["border-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["border-color"] = optionsObj["border-color"];
+                    }
+                }
+            }
+            return chartJson;
+        });
+
+        var myConfig = {
+            "type": "bar",
+            "title": {
+                "text": "Percentage of assets-Rural"
+            },
+            "toolbar-zoom": { // Add the toolbar
+                "background-color": "#FFFFFF #D0D7E1",
+                "border-color": "#ACAFB6"
+            },
+            "scale-x": {
+                "zooming": true,
+
+                "values": ['Own house', 'Pucca', 'Water supply', 'Toilet', 'LPG', 'Kitchen sink', 'Live stock', 'Smartphone', 'Washing machine', 'Refrigerator', 'TV', 'Two-wheeler', 'Tractor', 'Car', 'Maid', 'Internet', 'AC'],
+                "LabelRotation": -45,
+                "angle": -90,
+                item: {
+                    angle: -45
+                },
+                itemsOverlap: true,
+                maxItems: 17,
+            },
+            "scrollX": {},
+
+            "series": [
+                {
+                    "values": [92.85, 76.04, 60.90, 75.21, 97.5, 30.62, 30.28, 67.39, 14.48, 70.72, 96.51, 80.53, 2.33, 2.83, 0.50, 61.23, 6.66]
+                }
+            ]
+        };
+
+        zingchart.render({
+            id: 'chart_divrural',
+            data: myConfig,
+            height: 400,
+            width: '100%',
+            modules: "toolbar-zoom" // Load the toolbar
+        });
+    </script>
+
+
+    
+    <script type="text/javascript">
+
+
+        zingchart.loadModules('scalableyaxis', function (e) {
+            let chartConfig = {
+                type: 'mixed',
+                globals: {
+                    fontFamily: 'Arial'
+                },
+                backgroundColor: '#FFFFFF',
+                width: '100%',
+                title: {
+                    text: 'Chronic illness-Urban',
+                },
+
+                legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove',
+                    x: '32px',
+                    y: '80px'
+                },
+                plot: {
+                    barSpace: ''
+                },
+                plotarea: {
+                    margin: '125px 45px 30px 45px'
+                },
+                scaleX: {
+                    values: ['Asthma', 'Arthritis', 'Depression', 'Diabetes', 'Hypertension', 'Lipid', 'Heart condition', 'Liver condition', 'Cancer', 'Others'],
+                    guide: {
+                        visible: false
+                    },
+                    item: {
+                        color: '#8B8B8B'
+                    },
+                    lineColor: '#D9D7D5',
+                    lineWidth: '1px',
+                    tick: {
+                        visible: false
+                    }
+                },
+                scaleY: {
+                    values: '0:200:20',
+                    guide: {
+                        lineStyle: 'dotted'
+                    },
+                    item: {
+                        color: '#8B8B8B'
+                    },
+                    lineColor: '#D9D7D5',
+                    lineWidth: '1px',
+                    tick: {
+                        visible: false
+                    }
+                },
+                scaleY5: {
+                    values: '0:60:5',
+
+                    lineColor: '#D9D7D5',
+                },
+
+                series: [
+
+                    {
+                        type: 'bar',
+                        text: 'Illness present',
+                        values: [7, 8, 3, 146, 158, 10, 23, 3, 6, 62],
+                        backgroundColor: '#7BBADE',
+                        barWidth: '80px',
+                        scales: 'scale-x, scale-y',
+                        hoverState: {
+                            visible: false
+                        }
+                    },
+
+                    {
+                        type: 'line',
+                        text: 'Percent',
+                        values: [2.36, 2.69, 1.01, 49.16, 53.2, 3.37, 7.74, 1.01, 2.02, 20.81],
+                        aspect: 'spline',
+                        highlight: false,
+                        lineColor: '#8B8B8B',
+                        lineWidth: '2px',
+                        scales: 'scale-x, scale-y-5',
+                        marker: {
+                            backgroundColor: '#FFFFFF',
+                            borderColor: '#8B8B8B',
+                            borderWidth: '2px',
+                            shadow: false
+                        }
+                    }
+                ]
+            };
+            zingchart.render({
+                id: 'chart_illnessurban',
+                data: chartConfig
+            });
+        });
+    </script>
+	
+	<script type="text/javascript">
+
+
+        zingchart.loadModules('scalableyaxis', function (e) {
+            let chartConfig = {
+                type: 'mixed',
+                globals: {
+                    fontFamily: 'Arial'
+                },
+                backgroundColor: '#FFFFFF',
+                width: '100%',
+                title: {
+                    text: 'Chronic illness',
+                },
+
+                legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove',
+                    x: '32px',
+                    y: '80px'
+                },
+                plot: {
+                    barSpace: ''
+                },
+                plotarea: {
+                    margin: '125px 45px 30px 45px'
+                },
+                scaleX: {
+                    values: ['Asthma', 'Arthritis', 'Depression', 'Diabetes', 'Hypertension', 'Lipid', 'Heart condition', 'Liver condition', 'Cancer', 'Others'],
+                    guide: {
+                        visible: false
+                    },
+                    item: {
+                        color: '#8B8B8B'
+                    },
+                    lineColor: '#D9D7D5',
+                    lineWidth: '1px',
+                    tick: {
+                        visible: false
+                    }
+                },
+                scaleY: {
+                    values: '0:200:20',
+                    guide: {
+                        lineStyle: 'dotted'
+                    },
+                    item: {
+                        color: '#8B8B8B'
+                    },
+                    lineColor: '#D9D7D5',
+                    lineWidth: '1px',
+                    tick: {
+                        visible: false
+                    }
+                },
+                scaleY5: {
+                    values: '0:60:5',
+
+                    lineColor: '#D9D7D5',
+                },
+
+                series: [
+
+                    {
+                        type: 'bar',
+                        text: 'Illness present',
+                        values: [7, 8, 2, 115, 78, 6, 15, 4, 2, 37],
+                        backgroundColor: '#7BBADE',
+                        barWidth: '80px',
+                        scales: 'scale-x, scale-y',
+                        hoverState: {
+                            visible: false
+                        }
+                    },
+
+                    {
+                        type: 'line',
+                        text: 'Percent',
+                        values: [3.54, 4.04, 1.01, 58.08, 39.39, 3.03, 7.58, 2.02, 1.01, 18.69],
+                        aspect: 'spline',
+                        highlight: false,
+                        lineColor: '#8B8B8B',
+                        lineWidth: '2px',
+                        scales: 'scale-x, scale-y-5',
+                        marker: {
+                            backgroundColor: '#FFFFFF',
+                            borderColor: '#8B8B8B',
+                            borderWidth: '2px',
+                            shadow: false
+                        }
+                    }
+                ]
+            };
+            zingchart.render({
+                id: 'Smartchart_illnessurban',
+                data: chartConfig
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+
+        zingchart.loadModules('scalableyaxis', function (e) {
+            let chartConfig = {
+                type: 'mixed',
+                globals: {
+                    fontFamily: 'Arial'
+                },
+                backgroundColor: '#FFFFFF',
+                width: '100%',
+                title: {
+                    text: 'Chronic illness-Rural',
+                },
+
+                legend: {
+                    backgroundColor: 'none',
+                    borderWidth: '0px',
+                    item: {
+                        fontColor: '#7E7E7E'
+                    },
+                    layout: 'float',
+                    marker: {
+                        type: 'circle'
+                    },
+                    shadow: false,
+                    toggleAction: 'remove',
+                    x: '32px',
+                    y: '80px'
+                },
+                plot: {
+                    barSpace: ''
+                },
+                plotarea: {
+                    margin: '125px 45px 30px 45px'
+                },
+                scaleX: {
+                    values: ['Asthma', 'Arthritis', 'Depression', 'Diabetes', 'Hypertension', 'Lipid', 'Heart condition', 'Liver condition', 'Cancer', 'Others'],
+                    guide: {
+                        visible: false
+                    },
+                    item: {
+                        color: '#8B8B8B'
+                    },
+                    lineColor: '#D9D7D5',
+                    lineWidth: '1px',
+                    tick: {
+                        visible: false
+                    }
+                },
+                scaleY: {
+                    values: '0:300:20',
+                    guide: {
+                        lineStyle: 'dotted'
+                    },
+                    item: {
+                        color: '#8B8B8B'
+                    },
+                    lineColor: '#D9D7D5',
+                    lineWidth: '1px',
+                    tick: {
+                        visible: false
+                    }
+                },
+                scaleY5: {
+                    values: '0:60:5',
+
+                    lineColor: '#D9D7D5',
+                },
+
+                series: [
+
+                    {
+                        type: 'bar',
+                        text: 'Illness present',
+                        values: [11, 18, 5, 249, 164, 5, 30, 11, 2, 43],
+                        backgroundColor: '#7BBADE',
+                        barWidth: '80px',
+                        scales: 'scale-x, scale-y',
+                        hoverState: {
+                            visible: false
+                        }
+                    },
+
+                    {
+                        type: 'line',
+                        text: 'Percent',
+                        values: [2.65, 4.34, 1.20, 60.00, 39.52, 1.20, 7.23, 2.65, 0.48, 10.36],
+                        aspect: 'spline',
+                        highlight: false,
+                        lineColor: '#8B8B8B',
+                        lineWidth: '2px',
+                        scales: 'scale-x, scale-y-5',
+                        marker: {
+                            backgroundColor: '#FFFFFF',
+                            borderColor: '#8B8B8B',
+                            borderWidth: '2px',
+                            shadow: false
+                        }
+                    }
+                ]
+            };
+            zingchart.render({
+                id: 'chart_illnessrural',
+                data: chartConfig
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Age groups', 'Male', 'Female'],
+                ['0-9', 99, 95],
+                ['10-19', 98, 90],
+                ['20-29', 118, 121],
+                ['30-39', 105, 113],
+                ['40-49', 95, 102],
+                ['50-59', 65, 53],
+                ['60-69', 35, 55],
+                ['70-79', 22, 25],
+                ['80-89', 3, 6],
+                ['90+', 2, 4],
+
+            ]);
+
+            var options = {
+
+                //title: 'Age distribution',
+                bars: 'vertical',
+                vAxis: { title: '', format: 'decimal' },
+                height: 400,
+                width: 1000,
+                //colors: ['#1b9e77', '#d95f02']
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('chart_age'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+
+            var btns = document.getElementById('btn-group');
+
+            btns.onclick = function (e) {
+
+                if (e.target.tagName === 'BUTTON') {
+                    options.vAxis.format = e.target.id === 'none' ? '' : e.target.id;
+                    chart.draw(data, google.charts.Bar.convertOptions(options));
+                }
+            }
+        }
+    </script>
+   
+
+
+    <script type="text/javascript">
+
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Frequency', 'Yes'],
+                ['Within last week', 74],
+                ['Within one month', 187],
+                ['Within three months', 46]
+
+
+            ]);
+
+            var options = {
+
+                title: 'OPD Visit'
+
+                ,
+
+                vAxis: { title: '', format: 'decimal' },
+                height: 400,
+                width: 750,
+                seriesType: 'bars',
+
+            };
+
+            var chart = new google.visualization.ComboChart(document.getElementById('opd_visit'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <script type="text/javascript">
+
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Frequency', 'Yes'],
+
+                ['Within one month', 12],
+                ['Within three months', 13],
+                ['Within six months', 21],
+                ['Within one year', 32]
+
+
+            ]);
+
+            var options = {
+
+                title: 'IPD Visit'
+
+                ,
+
+                vAxis: { title: '', format: 'decimal' },
+                height: 400,
+                width: 750,
+                seriesType: 'bars',
+
+            };
+
+            var chart = new google.visualization.ComboChart(document.getElementById('ipd_visit'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+   
+    <script type="text/javascript">
+
+        zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/'
+
+        zingchart.defineModule('toolbar-zoom', 'plugin', function (chartJson) {
+            /*
+            * If the 'labels' array of objects already exists, do nothing.
+            * If it does not exist, initialize it as an empty array.
+            * We do this to avoid obliteration of any existing labels.
+            */
+            chartJson.labels = chartJson.labels ? chartJson.labels : [];
+
+
+            var optionsObj = chartJson["toolbar-zoom"];
+
+            if (optionsObj["background-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["background-color"] = optionsObj["background-color"];
+                    }
+                }
+            }
+            /* Same thing as above, but for border-color.  */
+            if (optionsObj["border-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["border-color"] = optionsObj["border-color"];
+                    }
+                }
+            }
+            return chartJson;
+        });
+
+        var myConfig = {
+            "type": "bar",
+            "title": {
+                "text": "Monthly Income Categorywise-Urban"
+            },
+            "toolbar-zoom": { // Add the toolbar
+                "background-color": "#FFFFFF #D0D7E1",
+                "border-color": "#ACAFB6"
+            },
+            "scale-x": {
+
+                "zooming": true,
+
+                "values": ['Under 10000', '10000-25000', '25000-50000', 'Above 50000'],
+
+            },
+            "scale-y": {
+                label: { text: 'No. of households' },
+            },
+            "scrollX": {},
+
+            "series": [
+                {
+                    "values": [110, 139, 40, 12]
+                }
+            ]
+        };
+
+        zingchart.render({
+            id: 'monthly_expenseurban',
+            data: myConfig,
+            height: 400,
+            width: '100%',
+            modules: "toolbar-zoom" // Load the toolbar
+        });
+    </script>
+	<script type="text/javascript">
+
+        zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/'
+
+        zingchart.defineModule('toolbar-zoom', 'plugin', function (chartJson) {
+            /*
+            * If the 'labels' array of objects already exists, do nothing.
+            * If it does not exist, initialize it as an empty array.
+            * We do this to avoid obliteration of any existing labels.
+            */
+            chartJson.labels = chartJson.labels ? chartJson.labels : [];
+
+
+            var optionsObj = chartJson["toolbar-zoom"];
+
+            if (optionsObj["background-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["background-color"] = optionsObj["background-color"];
+                    }
+                }
+            }
+            /* Same thing as above, but for border-color.  */
+            if (optionsObj["border-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["border-color"] = optionsObj["border-color"];
+                    }
+                }
+            }
+            return chartJson;
+        });
+
+        var myConfig = {
+            "type": "bar",
+            "title": {
+                "text": "Monthly Income Categorywise"
+            },
+            "toolbar-zoom": { // Add the toolbar
+                "background-color": "#FFFFFF #D0D7E1",
+                "border-color": "#ACAFB6"
+            },
+            "scale-x": {
+
+                "zooming": true,
+
+                "values": ['Under 10000', '10000-25000', '25000-50000', 'Above 50000'],
+
+            },
+            "scale-y": {
+                label: { text: 'No. of households' },
+            },
+            "scrollX": {},
+
+            "series": [
+                {
+                    "values": [32.35, 48.04, 16.18, 3.43]
+                }
+            ]
+        };
+
+        zingchart.render({
+            id: 'Smartmonthly_expenseurban',
+            data: myConfig,
+            height: 400,
+            width: '100%',
+            modules: "toolbar-zoom" // Load the toolbar
+        });
+    </script>
+    <script type="text/javascript">
+
+        zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/'
+
+        zingchart.defineModule('toolbar-zoom', 'plugin', function (chartJson) {
+            /*
+            * If the 'labels' array of objects already exists, do nothing.
+            * If it does not exist, initialize it as an empty array.
+            * We do this to avoid obliteration of any existing labels.
+            */
+            chartJson.labels = chartJson.labels ? chartJson.labels : [];
+
+
+            var optionsObj = chartJson["toolbar-zoom"];
+
+            if (optionsObj["background-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["background-color"] = optionsObj["background-color"];
+                    }
+                }
+            }
+            /* Same thing as above, but for border-color.  */
+            if (optionsObj["border-color"]) {
+                for (var n in chartJson["labels"]) {
+                    var labelObj = chartJson["labels"][n];
+                    if ((labelObj["id"] == "zoomin") || (labelObj["id"] == "zoomout") || (labelObj["id"] == "viewall")) {
+                        labelObj["border-color"] = optionsObj["border-color"];
+                    }
+                }
+            }
+            return chartJson;
+        });
+
+        var myConfig = {
+            "type": "bar",
+            "title": {
+                "text": "Monthly Income Categorywise-Rural"
+            },
+            "toolbar-zoom": { // Add the toolbar
+                "background-color": "#FFFFFF #D0D7E1",
+                "border-color": "#ACAFB6"
+            },
+            "scale-x": {
+
+                "zooming": true,
+
+                "values": ['Under 10000', '10000-25000', '25000-50000', 'Above 50000'],
+
+            },
+            "scale-y": {
+                label: { text: 'No. of households' },
+            },
+            "scrollX": {},
+
+            "series": [
+                {
+                    "values": [250, 280, 62, 9]
+                }
+            ]
+        };
+
+        zingchart.render({
+            id: 'monthly_expenserural',
+            data: myConfig,
+            height: 400,
+            width: '100%',
+            modules: "toolbar-zoom" // Load the toolbar
+        });
+    </script>
+
+
+    <script>
+
+
+        window.addEventListener('load', () => {
+            // Javascript code to execute after DOM content
+
+            // full ZingChart schema can be found here:
+
+            let chartConfig = {
+                type: 'pop-pyramid',
+                globals: {
+                    fontSize: '14px'
+                },
+                title: {
+                    text: 'Age distribution-Urban',
+                    fontSize: '14px'
+                },
+                options: {
+                    // values can be: 'bar', 'hbar', 'area', 'varea', 'line', 'vline'
+                    aspect: 'hbar'
+                },
+                legend: {
+                    shared: true
+                },
+                // plot represents general series, or plots, styling
+                plot: {
+                    // hoverstate
+                    tooltip: {
+                        padding: '10px 15px',
+                        borderRadius: '3px'
+                    },
+                    valueBox: {
+                        color: '#fff',
+                        placement: 'top-in',
+                        thousandsSeparator: ','
+                    },
+                    // animation docs here:
+
+                    animation: {
+                        effect: '',
+                        method: 'ANIMATION_STRONG_EASE_OUT',
+                        sequence: 'ANIMATION_BY_NODE',
+                        speed: 222
+                    }
+                },
+                scaleX: {
+                    // set scale label
+                    label: {
+                        text: 'Age Groups'
+                    },
+                    labels: ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '60-70', '70-80', '80-90', '> 90'],
+                },
+                scaleY: {
+                    // scale label with unicode character
+                    label: {
+                        text: ''
+                    }
+                },
+                series: [{
+                    text: 'Percentage of Male',
+                    values: [17.45, 17.16, 17.60, 15.54, 15.25, 8.94, 5.43, 2.05, 0.44, 0.15],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#4682b4',
+                    dataSide: 2
+                },
+                {
+                    text: 'Percentage of Female',
+                    values: [15.94, 15.23, 18.90, 17.21, 13.26, 9.03, 5.92, 3.81, 0.56, 0.14],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#ee7988',
+                    dataSide: 1
+                }
+                ]
+            };
+
+            // render chart
+            zingchart.render({
+                id: 'myCharturban',
+                data: chartConfig,
+                height: '50%',
+                width: '100%',
+            });
+        });
+    </script>
+	
+	    <script>
+
+
+        window.addEventListener('load', () => {
+            // Javascript code to execute after DOM content
+
+            // full ZingChart schema can be found here:
+
+            let chartConfig = {
+                type: 'pop-pyramid',
+                globals: {
+                    fontSize: '14px'
+                },
+                title: {
+                    text: 'Age distribution',
+                    fontSize: '14px'
+                },
+                options: {
+                    // values can be: 'bar', 'hbar', 'area', 'varea', 'line', 'vline'
+                    aspect: 'hbar'
+                },
+                legend: {
+                    shared: true
+                },
+                // plot represents general series, or plots, styling
+                plot: {
+                    // hoverstate
+                    tooltip: {
+                        padding: '10px 15px',
+                        borderRadius: '3px'
+                    },
+                    valueBox: {
+                        color: '#fff',
+                        placement: 'top-in',
+                        thousandsSeparator: ','
+                    },
+                    // animation docs here:
+
+                    animation: {
+                        effect: '',
+                        method: 'ANIMATION_STRONG_EASE_OUT',
+                        sequence: 'ANIMATION_BY_NODE',
+                        speed: 222
+                    }
+                },
+                scaleX: {
+                    // set scale label
+                    label: {
+                        text: 'Age Groups'
+                    },
+                    labels: ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '60-70', '70-80', '80-90', '> 90'],
+                },
+                scaleY: {
+                    // scale label with unicode character
+                    label: {
+                        text: ''
+                    }
+                },
+                series: [{
+                    text: 'Percentage of Male',
+                    values: [18.97, 12.45, 18.97, 19.35, 8.43, 10.92, 7.47, 2.87, 0.57, 0],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#4682b4',
+                    dataSide: 2
+                },
+                {
+                    text: 'Percentage of Female',
+                    values: [17.38, 11.28, 22.55, 14.42, 12.57, 13.12, 5.55, 2.59, 0.37, 0.18],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#ee7988',
+                    dataSide: 1
+                }
+                ]
+            };
+
+            // render chart
+            zingchart.render({
+                id: 'SmartmyCharturban',
+                data: chartConfig,
+                height: '50%',
+                width: '100%',
+            });
+        });
+    </script>
+    
+    <script>
+
+
+        window.addEventListener('load', () => {
+            // Javascript code to execute after DOM content
+
+            // full ZingChart schema can be found here:
+
+            let chartConfig = {
+                type: 'pop-pyramid',
+                globals: {
+                    fontSize: '14px'
+                },
+                title: {
+                    text: 'Age distribution-Rural',
+                    fontSize: '14px'
+                },
+                options: {
+                    // values can be: 'bar', 'hbar', 'area', 'varea', 'line', 'vline'
+                    aspect: 'hbar'
+                },
+                legend: {
+                    shared: true
+                },
+                // plot represents general series, or plots, styling
+                plot: {
+                    // hoverstate
+                    tooltip: {
+                        padding: '10px 15px',
+                        borderRadius: '3px'
+                    },
+                    valueBox: {
+                        color: '#fff',
+                        placement: 'top-in',
+                        thousandsSeparator: ','
+                    },
+                    // animation docs here:
+
+                    animation: {
+                        effect: '',
+                        method: 'ANIMATION_STRONG_EASE_OUT',
+                        sequence: 'ANIMATION_BY_NODE',
+                        speed: 222
+                    }
+                },
+                scaleX: {
+                    // set scale label
+                    label: {
+                        text: 'Age Groups'
+                    },
+                    labels: ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '60-70', '70-80', '80-90', '> 90'],
+                },
+                scaleY: {
+                    // scale label with unicode character
+                    label: {
+                        text: ''
+                    }
+                },
+                series: [{
+                    text: 'Percentage of Male',
+                    values: [17.01, 14.9, 19.47, 16.8, 12.79, 9.91, 6.04, 2.53, 0.56, 0.05],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#4682b4',
+                    dataSide: 2
+                },
+                {
+                    text: 'Percentage of Female',
+                    values: [14.78, 14.43, 19.45, 16.27, 14.5, 12.02, 5.59, 2.19, 0.71, 0.07],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#ee7988',
+                    dataSide: 1
+                }
+                ]
+            };
+
+            // render chart
+            zingchart.render({
+                id: 'myChartrural',
+                data: chartConfig,
+                height: '50%',
+                width: '100%',
+            });
+        });
+    </script>
+    <script>
+
+
+        window.addEventListener('load', () => {
+            // Javascript code to execute after DOM content
+
+            // full ZingChart schema can be found here:
+
+            let chartConfig = {
+                type: 'pop-pyramid',
+                globals: {
+                    fontSize: '14px'
+                },
+                title: {
+                    text: 'Age distribution- urban',
+                    //fontSize: '24px'
+                },
+                options: {
+                    // values can be: 'bar', 'hbar', 'area', 'varea', 'line', 'vline'
+                    aspect: 'hbar'
+                },
+                legend: {
+                    shared: true
+                },
+                // plot represents general series, or plots, styling
+                plot: {
+                    // hoverstate
+                    tooltip: {
+                        padding: '10px 15px',
+                        borderRadius: '3px'
+                    },
+                    valueBox: {
+                        color: '#fff',
+                        placement: 'top-in',
+                        thousandsSeparator: ','
+                    },
+                    // animation docs here:
+
+                    animation: {
+                        effect: '',
+                        method: 'ANIMATION_STRONG_EASE_OUT',
+                        sequence: 'ANIMATION_BY_NODE',
+                        speed: 222
+                    }
+                },
+                scaleX: {
+                    // set scale label
+                    label: {
+                        text: 'Age Groups'
+                    },
+                    labels: ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '70-80', '80-90', '90-100'],
+                },
+                scaleY: {
+                    // scale label with unicode character
+                    label: {
+                        text: 'Percentage'
+                    }
+                },
+                series: [{
+                    text: 'Male',
+                    values: [14, 15, 21, 15, 17, 10, 5, 1, 0, 0],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#4682b4',
+                    dataSide: 1
+                },
+                {
+                    text: 'Female',
+                    values: [13, 16, 19, 19, 15, 5, 8, 3, 1, 0],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#ee7988',
+                    dataSide: 2
+                }
+                ]
+            };
+
+            // render chart
+            zingchart.render({
+                id: 'urbanChart',
+                data: chartConfig,
+                //height: '100%',
+                //width: '100%',
+            });
+        });
+    </script>
+
+
+    <script>
+
+
+        window.addEventListener('load', () => {
+            // Javascript code to execute after DOM content
+
+            // full ZingChart schema can be found here:
+
+            let chartConfig = {
+                type: 'pop-pyramid',
+                globals: {
+                    fontSize: '14px'
+                },
+                title: {
+                    text: 'Age distribution- rural',
+                    //fontSize: '24px'
+                },
+                options: {
+                    // values can be: 'bar', 'hbar', 'area', 'varea', 'line', 'vline'
+                    aspect: 'hbar'
+                },
+                legend: {
+                    shared: true
+                },
+                // plot represents general series, or plots, styling
+                plot: {
+                    // hoverstate
+                    tooltip: {
+                        padding: '10px 15px',
+                        borderRadius: '3px'
+                    },
+                    valueBox: {
+                        color: '#fff',
+                        placement: 'top-in',
+                        thousandsSeparator: ','
+                    },
+                    // animation docs here:
+
+                    animation: {
+                        effect: '',
+                        method: 'ANIMATION_STRONG_EASE_OUT',
+                        sequence: 'ANIMATION_BY_NODE',
+                        speed: 222
+                    }
+                },
+                scaleX: {
+                    // set scale label
+                    label: {
+                        text: 'Age Groups'
+                    },
+                    labels: ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '70-80', '80-90', '90-100'],
+                },
+                scaleY: {
+                    // scale label with unicode character
+                    label: {
+                        text: 'Percentage'
+                    }
+                },
+                series: [{
+                    text: 'Male',
+                    values: [19, 13, 20, 18, 12, 10, 6, 2, 0, 0],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#4682b4',
+                    dataSide: 1
+                },
+                {
+                    text: 'Female',
+                    values: [17, 13, 19, 15, 15, 12, 6, 2, 1, 0],
+                    // two colors with a space makes a gradient
+                    backgroundColor: '#ee7988',
+                    dataSide: 2
+                }
+                ]
+            };
+
+            // render chart
+            zingchart.render({
+                id: 'ruralChart',
+                data: chartConfig,
+                //height: '100%',
+                //width: '100%',
+            });
+        });
+    </script>
+
+</body>
+</html >
